@@ -1,0 +1,47 @@
+/*------------componentes en crudo-------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+ font-size: 1rem;   
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 222, 189);
+}
+
+/*--------------stylo------------*/
+
+
+.contenedor{
+
+    background-color: beige;
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1rem;
+    border: solid 3px rgb(255, 208, 0);
+    border-radius: 1rem;
+    
+}
+
+
+.contenedor > *{
+    background-color: chartreuse;
+}
+
+/*--------selector de atributos es con corchetes----*/
+
+[]
