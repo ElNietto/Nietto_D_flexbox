@@ -6,42 +6,137 @@
     box-sizing: border-box;
 }
 
-li{
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
 
-p{
- font-size: 1rem;   
-}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(247, 222, 189);
+
 }
+
+
+
+/*------------menu*/
+
+.nav{
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.logo{
+    justify-self: start;
+    gap: 2rem;
+    left: 3rem;
+    font-size: larger;
+    font-weight: 800;
+
+}
+
+.nav-contenedor{
+    display: flex;
+    gap: 2rem;
+    width: 100vh;
+    justify-content: center;
+}
+
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
 
 /*--------------stylo------------*/
 
 
 .contenedor{
 
-    background-color: beige;
-    width: 80%;
-    margin: 5rem auto;
-    padding: 1rem;
-    border: solid 3px rgb(255, 208, 0);
-    border-radius: 1rem;
-    
+    background-color: rgb(248, 217, 171);
+	margin: 5rem auto;
+	width: 80%;
+	border: solid 3px rgb(233, 167, 91);
+	padding: 1rem;
+	border-radius: 1rem;
+	position: relative;
+	height: 80vh;
+
+	display: flex;
+	row-gap: 1rem;
+
 }
 
 
-.contenedor > *{
-    background-color: chartreuse;
-}
+
 
 /*--------selector de atributos es con corchetes----*/
 
-[]
+[class*="hijoles"] {
+    background-color: rgb(233, 224, 173);
+    padding: .5rem;
+    flex-basis: 1rem;
+    flex-grow: 1;
+    transition: .5s;
+    box-shadow: -.7rem 0 .5rem rgba(0 0 0 / .3);
+    position: relative;
+	border-radius: .5rem 0 0 .5rem;
+    font-weight: 600;
+}
+
+
+
+.h-visible {
+    font-weight: 100;
+    width: 7rem;
+    position: absolute;
+    left: 5.5rem;
+    top: 4rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+
+[class*="hijoles"]:hover{
+    flex-grow: 10;
+
+}
+
+[class*="hijoles"]:hover > .h-visible{
+    opacity: 1;
+    
+
+}
+
+.hijoles01{
+    background-color: rgb(0, 255, 55);
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.hijoles02{
+    background-color: aqua;
+}
+
+
+.hijoles03{
+    background-color: rgb(0, 68, 255);
+}
+
+
+.hijoles04{
+    background-color: rgb(89, 0, 255);
+}
+
+
+.hijoles05{
+    background-color: rgb(162, 0, 255);
+}
+
+
